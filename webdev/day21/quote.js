@@ -13,11 +13,28 @@ const quotes = [
   "Your time is limited, so don’t waste it living someone else’s life. – Steve Jobs"
 ];
 
+const colors = [
+  "red",
+  "blue",
+  "green",
+  "orange",
+  "purple",
+  "yellow",
+  "pink",
+  "cyan",
+  "magenta",
+  "teal"
+];
+
 function load(){
 const select = Math.floor(Math.random()*quotes.length);
+const selectcolor = Math.floor(Math.random()*colors.length);
 
 const quote_holder =document.getElementById('quote');
 quote_holder.innerHTML=quotes[select];
+const color_holder =document.querySelector('body');
+color_holder.style.backgroundColor = colors[selectcolor]; // Use camelCase
+
 }
 
 setInterval(load,1000);
