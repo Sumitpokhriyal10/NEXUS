@@ -1,0 +1,42 @@
+body{
+    padding: 10px;
+    margin: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+background-color:yellow;
+   height: 100vh;
+ width: 100vw
+}
+
+h1{
+    text-align: center;
+}
+
+
+#sumit{
+    margin-top: 10px;
+   
+}
+#handler{
+    display: flex;
+    justify-content: center;
+}
+
+#first,#second{
+    padding: 10px;
+}
+
+#root{
+     border: solid 5px purple;
+     border-radius: 5px;
+     padding: 10px;
+     background-color: rgb(4, 230, 251);
+     
+    
+}
+#result{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
