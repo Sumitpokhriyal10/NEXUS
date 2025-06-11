@@ -24,11 +24,22 @@
 //  document.body.style.backgroundColor="blue";
 //})
 
-const buttons = document.querySelectorAll("button");
-const body = document.body;
+//const buttons = document.querySelectorAll("button");
+//const body = document.body;
 
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    body.style.backgroundColor = button.id;
-  });
-});
+///buttons.forEach((button) => {
+ // button.addEventListener("click", () => {
+   // body.style.backgroundColor = button.id;
+ // });
+//});
+
+ const root =document.getElementById('root');
+ const body =document.body;
+ root.addEventListener('click',(event)=>{
+
+
+  if(event.target.tagName== 'BUTTON')
+  body.style.backgroundColor=event.target.id;
+
+
+})
