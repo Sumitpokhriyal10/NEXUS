@@ -23,7 +23,7 @@ form.addEventListener("submit", (event) => {
   for(let [key,value] of data.entries())
   {
     if(value===original_arr[key])
-        result++;
+        result++; 
   }
   //for (let i = 0; i < answersheet.length; i++) {
     //if (answersheet[i] === original_arr[i]) result++;
