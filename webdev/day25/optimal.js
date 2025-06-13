@@ -207,3 +207,6 @@ form.addEventListener('submit',(event)=>{
     form.reset();
  
  })
+
+
+ //dynamic form using js
