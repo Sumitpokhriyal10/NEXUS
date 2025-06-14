@@ -128,15 +128,46 @@ const questionBank = [
 ];
 
 function RandomQuestion() {
-  const data = new Set();
+ // const data = new Set();
 
-  while (data.size != 5) {
-    const index = Math.floor(Math.random() * 20);
-    data.add(questionBank[index]);
-  }
+ // while (data.size != 5) {
+   // const index = Math.floor(Math.random() * 20);
+   // data.add(questionBank[index]);
+ // }
 
-  return [...data]; //set ko array me convert kar diya.
+  //return [...data]; //set ko array me convert kar diya.
+
+
+//randomly sort question bank wale array ko
+
+//questionBank.sort(()=>Math.random()-0.5);
+
+//return questionBank.slice(0,5);
+
+//new logic(sabse optimize approach)=========
+
+const arr=[];
+let length=questionBank.length;
+
+for(let i=0;i<5;i++){
+
+  const index =Math.floor(Math.random()*length)
+  arr.push(questionBank[index]);
+  //swap
+  [questionBank[index],questionBank[length-1]]=[questionBank[length-1],questionBank[index]]
+  
+  length--;
 }
+
+return arr;
+
+
+}
+
+
+
+
+
 
 const form = document.getElementById("quizForm");
 const problem = RandomQuestion();
