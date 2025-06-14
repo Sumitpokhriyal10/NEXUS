@@ -1,0 +1,1 @@
+starting with good logical project in js help in executing mathematical and dynamic processes 
