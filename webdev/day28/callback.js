@@ -1,4 +1,4 @@
-//call back hell
+//call back 
 
 function fetchuser(callback) {
   console.log("fetching the user detail.....");
