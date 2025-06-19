@@ -1,5 +1,5 @@
 //async task(weather)
-//const obj =fetch(`http://api.weatherapi.com/v1/current.json?key=ffff21a3252a4edb922102008253001&q=London&aqi=no`);
+//const promise =fetch(`http://api.weatherapi.com/v1/current.json?key=ffff21a3252a4edb922102008253001&q=London&aqi=no`);
 
 //set timeout method to solve out this problem
 //setTimeout(()=>{
@@ -11,8 +11,8 @@
 //so we use promises here
 
 //we should know how to handle error there would be 2 option whether request is resolve or reject the reject one would go to the error argument
-//obj.then((data)=>{
-//console.log(data);
+//promise.then((response)=>{
+//console.log(response);
 //}).catch((error)=>{
 //   console.log(error);
 //})
@@ -23,9 +23,7 @@
 //1.pending
 //2.resolve
 //3.reject
-const promise = fetch(
-  `http://api.weatherapi.com/v1/current.json?key=ffff21a3252a4edb922102008253001&q=London&aqi=no`
-);
+const promise = fetch(`http://api.weatherapi.com/v1/current.json?key=ffff21a3252a4edb922102008253001&q=London&aqi=no`);
 
 //const prom2 = promise.then((response) => {
 //console.log(response);//by printing we would get response header but we want to get the reponse body part
