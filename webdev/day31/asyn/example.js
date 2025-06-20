@@ -21,15 +21,16 @@ function test2() {
 
 async function greet() {
     console.log("hello i greet you")
-    const data1 = await test1();
+    const [data1,data2] = await Promise.all([test1(),test2()])
     console.log(data1);
-
-     const data2 = await test2();
     console.log(data2);
+
+   //  const data2 = await test2();
+   // console.log(data2);
 
 }
 
-//greet();
+greet();
 console.log("hello coder army");
 console.log("kaise ho ap sab");
 
